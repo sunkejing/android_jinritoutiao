@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/login_panel_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户协议"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <com.ss.android.gamecommon.customview.ProgressWebView
+        android:id="@+id/wb_userprotocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></com.ss.android.gamecommon.customview.ProgressWebView>
+
+
+</LinearLayout>
